@@ -1,0 +1,31 @@
+echo ""
+echo "\033[37;1m            ตอบ Y หรือ n ได้แค่ครั้งเดียว"
+echo ""
+read -p "ต้องการกลับไปหน้า SPAMSMS ตอบ (Y/n) :  " korn
+read -p "ต้องการกลับไปหน้ายิง sms ตอบ (Y/n) :  " A
+
+
+if [ $korn = Y ] || [ $korn = y ]
+then
+python2 a.py
+fi
+
+
+if [ $korn = N ] || [ $korn = n ]
+then
+echo  ""
+fi
+
+
+if [ $A = Y ] || [ $A = y ]
+then
+python spamsms
+fi
+
+
+if [ $A = N ] || [ $A = n ]
+then
+clear
+cd
+exit
+fi

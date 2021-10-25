@@ -1,0 +1,33 @@
+#import os, sys, time
+#from time import sleep as timeout
+#python 2.7.15
+#korn Hodsusnayworld
+import os, sys, time
+from time import sleep as timeout
+def restart_program():
+        python = sys.executable
+        os.execl(python, python, * sys.argv)
+        curdir = os.getcwd()        
+
+B = raw_input("You want to go back to the shooting page SMS? (Y/n) :  ")
+
+if A == "Y" or A == "y":
+
+  os.system("python spamsms2")
+
+  
+elif A == "N" or A == "n":
+
+  sys.exit()
+
+
+    
+else:
+     print ""
+     print ""
+     print "     \033[37;1m[\033[31m!\033[37;1m]\033[31m incorrect"
+     timeout(5)
+     restart_program()
+
+     
+ 
