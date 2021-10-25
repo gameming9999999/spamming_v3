@@ -65,7 +65,7 @@ elif A == "6" or A == "06":
 
 elif A == "66" or A == "66":
 
-    os.system("python spam6.py")
+    os.system("python spamsms66.py")
 
   
   
