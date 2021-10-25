@@ -95,7 +95,7 @@ dark={
 for i in range(int(number)):
     darko=requests.put('https://webapi.depop.com/api/v1/auth/verify/phone',headers=mr_f,json=dark)
     ajg=json.loads(darko.text) 
-os.system("cd continu")
+
 os.system("python2 loding692")
 time.sleep(1)
 print ('\033[37;1m{\033[32;1m✓\033[37;1m} \033[32;1mSucceeds')
